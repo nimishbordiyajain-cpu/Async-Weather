@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navi Mumbai Weather</title>
+</head>
+<body style="margin:0; font-family:Arial; background:linear-gradient(135deg,#667eea,#764ba2); display:flex; justify-content:center; align-items:center; height:100vh;">
+
+    <div style="background:white; padding:30px; border-radius:15px; width:350px; text-align:center; box-shadow:0 10px 25px rgba(0,0,0,0.2);">
+
+        <h2 style="margin-bottom:20px;">🌤 Navi Mumbai Weather</h2>
+
+        <select id="locationSelect"
+            style="padding:10px; width:100%; border-radius:8px; margin-bottom:15px; font-size:16px;">
+            <option value="">-- Select Location --</option>
+            <option value="19.0330,73.0297">Vashi</option>
+            <option value="19.2183,72.9781">Nerul</option>
+            <option value="19.1145,73.0120">Belapur</option>
+            <option value="19.1000,73.0000">Panvel</option>
+            <option value="18.8780,72.9392">Uran</option>
+        </select>
+
+        <button onclick="getWeather()" 
+            style="padding:10px 20px; border:none; border-radius:8px; background:#667eea; color:white; cursor:pointer; font-size:16px;">
+            Get Weather
+        </button>
+
+        <div id="weather" style="margin-top:20px; font-size:18px;"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
